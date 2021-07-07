@@ -10,7 +10,7 @@ RSpec.describe 'HTML Album Cover' do
         expect(title_box.children.any? {|ch| ch.name == "h2"}).to be == true, "No 'h2' tag found"
         expect(title_box.children.select {|ch| ch.name == "h2"}.first.children.first.text).to be == "HAPPY", "Your 'h2' tag should contain the text 'HAPPY'"
 
-        expect(title_box.children.select {|ch| ch.name == "h4"}[1].children.first.text).to include("FROM DESPICABLE ME"), "A second 'h4' tag should contain the text 'FROM DESPICABLE ME'"
+
 
       end
 
